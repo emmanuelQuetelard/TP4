@@ -1,0 +1,13 @@
+#ifndef SYSTEME_H
+#define SYSTEME_H
+
+
+class Systeme
+{
+private:
+    InterfaceDeSaisie
+public:
+    Systeme();
+};
+
+#endif // SYSTEME_H
