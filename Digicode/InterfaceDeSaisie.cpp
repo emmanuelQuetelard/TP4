@@ -7,8 +7,8 @@ using namespace std;
 
 void nsDigicode::InterfaceDeSaisie::statut (string s)
 {
-    cout << endl     << "VERT"  << setw (4) // << leVoyantVert.getStatut ()
-         << setw (7) << "ROUGE" << setw (4) // << leVoyantRouge.getStatut ()
+    cout << endl     << "VERT"  << setw (4)  << myVoyantVert.getStatut ()
+         << setw (7) << "ROUGE" << setw (4)  << myVoyantRouge.getStatut ()
          << setw (24) << s << flush;
 } //statut
 
@@ -38,6 +38,7 @@ int InterfaceDeSaisie::saisieCode()
         while(myAttente && nbChiffresLus < myNbChiffresAttendus)
         {
             while(myAttente && (chiffreLu = myClavier.saisirChiffre()) == -1);
+             statut("continuez la saisie : ");
             if(myAttente)
             {
                 code = code * 10 + chiffreLu;

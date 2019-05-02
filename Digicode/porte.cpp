@@ -15,7 +15,7 @@ namespace nsDigicode {
         myAttente = true;
         getChrono()->demarrer(this);
         cout<< "vous pouvez entrer"<<endl;
-        while(myAttente  & !myCapteur.detecter());
+        while(myAttente  && !myCapteur.detecter());
         if(myAttente)
             return fermer();
         else {

@@ -18,7 +18,7 @@ namespace nsDigicode {
             myEtat = Etat::eteint;
     }
 
-    string Voyant::getStatus()
+    string Voyant::getStatut()
     {
         if(myEtat == Etat::allume)
             return "ON";

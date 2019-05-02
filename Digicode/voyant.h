@@ -5,9 +5,9 @@
 using namespace std;
 
 namespace nsDigicode {
-    enum Etat {allume = 0, eteint};
+    enum Etat {allume, eteint};
 
-    enum Couleur {vert = 0, rouge};
+    enum Couleur {vert, rouge};
 
     class Voyant
     {
@@ -21,7 +21,7 @@ namespace nsDigicode {
         void allumer();
         void eteindre();
 
-        string getStatus();
+        string getStatut();
     };
 }
 #endif // VOYANT_H

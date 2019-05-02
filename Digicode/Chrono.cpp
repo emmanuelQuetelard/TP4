@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <pthread.h>
-#include "ObjetTempo.h"
+#include "objettempo.h"
 #include "Chrono.h"         
 
 void nsDigicode::Chrono::arreter (void) { actif = 0; } 
